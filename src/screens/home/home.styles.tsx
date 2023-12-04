@@ -18,7 +18,7 @@ interface HomeStyles {
 
 export const HomeStyles = StyleSheet.create<HomeStyles>({
   container: {
-    backgroundColor: '#FBFAFA',
+    backgroundColor: ThemeVariables.lightWhite,
   },
   getStart: {
     color: ThemeVariables.main,
@@ -30,9 +30,9 @@ export const HomeStyles = StyleSheet.create<HomeStyles>({
   },
   listContainer: {
     justifyContent: 'space-between',
-    paddingHorizontal: 8, // Yatayda boşluk
+    paddingHorizontal: 8,
   },
   columnWrapper: {
-    marginHorizontal: -16, // Yatayda boşluk
+    marginHorizontal: -16,
   },
 });

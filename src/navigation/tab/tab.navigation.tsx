@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Text, TouchableOpacity, View} from 'react-native';
+import {Text, View} from 'react-native';
 import {TabStyles} from './tab.styles';
 import Home from '../../screens/home/home.screen';
 import Diagnose from '../../screens/diagnose/diagnose.screen';
