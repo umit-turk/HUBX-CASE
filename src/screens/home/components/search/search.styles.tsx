@@ -19,6 +19,7 @@ export const SearchStyles = StyleSheet.create({
     lineHeight: 18.96,
     fontWeight: TextStyles.fontWeight('400').fontWeight,
     fontSize: 16,
+    paddingTop:3,
   },
   time: {
     color: ThemeVariables.main,
@@ -34,7 +35,7 @@ export const SearchStyles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 0.2,
-    borderRadius: 12,
+    borderRadius: 24,
     borderColor: ThemeVariables.searchContainer,
     zIndex: 2,
     backgroundColor: ThemeVariables.searchContainerBg,
@@ -50,6 +51,8 @@ export const SearchStyles = StyleSheet.create({
     paddingLeft: 12,
     fontWeight: TextStyles.fontWeight('400').fontWeight,
     zIndex: 2,
+    color:'rgba(175, 175, 175, 1)',
+    width:'100%',
   },
   bottomLeftImage: {
     position: 'absolute',

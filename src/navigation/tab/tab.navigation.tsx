@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Text, View} from 'react-native';
+import {StatusBar, Text, View} from 'react-native';
 import {TabStyles} from './tab.styles';
 import Home from '../../screens/home/home.screen';
 import Diagnose from '../../screens/diagnose/diagnose.screen';
@@ -13,6 +13,7 @@ import {MyGardenIcon} from '../../shared/icons/mygarden-icon';
 import {TabRoutes} from './tab.routes';
 import {TabIcon} from '../../shared/icons/tab-icon';
 import Camera from '../../screens/camera/camera.screen';
+import { ThemeVariables } from '../../shared/theme/variables';
 
 const Tab = createBottomTabNavigator();
 
@@ -51,6 +52,7 @@ const tabScreenProps = (name, component, Icon) => {
 export const TabNavigation: React.FC = () => {
   return (
     <>
+    <StatusBar barStyle={'dark-content'} backgroundColor={ThemeVariables.searchBackGround} />
       <Tab.Navigator
         screenOptions={navigatorScreenOptions}
         backBehavior={'history'}>

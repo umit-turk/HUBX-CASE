@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import { ThemeVariables } from '../../../shared/theme/variables';
 
 export const ThirdStyles = StyleSheet.create({
     container: {
@@ -45,5 +46,8 @@ export const ThirdStyles = StyleSheet.create({
         bottom: '8%',
         left: 0,
         right: 0,
+      },
+      pointsContainer:{
+        backgroundColor:ThemeVariables.white,
       },
 });

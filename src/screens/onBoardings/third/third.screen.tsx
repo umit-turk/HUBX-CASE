@@ -44,17 +44,19 @@ const Third: React.FC = () => {
           </View>
         </View>
 
-        {/* Button Container */}
-        <LinearGradient
+       
+      </View>
+       {/* Button Container */}
+       <LinearGradient
           colors={['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 1)']}
-          style={{height: 235, width: '100%'}}></LinearGradient>
+          style={{height:235, width: '100%'}}>
+        </LinearGradient>
         <View style={[SpaceStyles.mx(24), ThirdStyles.buttonContainer]}>
           <Button onClick={next} text="continue" activeOpacity={1} />
         </View>
-        <View style={[SpaceStyles.mb(14.5)]}>
+        <View style={[SpaceStyles.pb(14.5),ThirdStyles.pointsContainer]}>
           <Points onboardingNumber={3} />
         </View>
-      </View>
     </SafeAreaView>
   );
 };

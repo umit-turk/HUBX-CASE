@@ -44,6 +44,7 @@ const boldTitles = {
 export const HeaderStyles = StyleSheet.create({
   container: {
     backgroundColor: '#FDFFFE',
+    paddingTop:12,
   },
   boldTitleImageContainer: {position: 'relative'},
   headerImage: {position: 'absolute', top: 30, left: -10},

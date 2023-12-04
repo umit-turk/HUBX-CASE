@@ -9,6 +9,7 @@ import {Button} from '../../../shared/ui/button/button';
 import {SpaceStyles} from '../../../shared/theme/space.styles';
 import {TextStyles} from '../../../shared/theme/text.styles';
 import {ThemeVariables} from '../../../shared/theme/variables';
+import { FirstStyles } from './first.screen.styles';
 
 const First: React.FC = () => {
   const navigation = useNavigation();
@@ -29,18 +30,15 @@ const First: React.FC = () => {
       </View>
       <View style={[SpaceStyles.mx(24), GridStyles.alignItemsCenter]}>
         <Button text="Get Started" onClick={next} activeOpacity={1} />
-        <Text
-          style={[
-            TextStyles.center,
-            SpaceStyles.mt(17),
-            SpaceStyles.mb(8),
-            SpaceStyles.width('70%'),
-            TextStyles.fontWeight('400'),
-            TextStyles.xSmall,
-          ]}>
-          By tapping next, you are agreeing to PlantID Terms of Use & Privacy
-          Policy.
+        <Text style={FirstStyles.footerText}>
+          By tapping next, you are agreeing to PlantID 
         </Text>
+        <View style={[GridStyles.flexRow, SpaceStyles.pb(8)]}>
+        <Text style={FirstStyles.terms}>Terms of Use</Text>
+        <Text style={FirstStyles.seperator}> & </Text>
+        <Text style={FirstStyles.terms}>Privacy Policy</Text>
+
+        </View>
       </View>
     </SafeAreaView>
   );

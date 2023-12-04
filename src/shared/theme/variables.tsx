@@ -6,7 +6,7 @@ export const ThemeVariables = {
   green:'#28AF6E',
   secondGreen:'#2CCC80',
   main:'#13231B',
-  myColor:'rgba(89, 113, 101, 0.7)',
+  navyGreen:'rgba(89, 113, 101, 0.7)',
   tabTextColor:'#979798',
   tabBackground:'rgba(255, 255, 255, 0.92)',
   background:'#FDFFFE',

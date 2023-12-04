@@ -9,10 +9,9 @@ export const TabStyles = StyleSheet.create({
     height: Platform.OS === 'ios' ? 84 : 60,
   },
   container: {
-    padding: 8,
     justifyContent: 'space-evenly',
     alignItems: 'center',
-    height: '100%',
+    gap:5,
     width: '100%',
   },
   circleWrapper: {
@@ -27,8 +26,8 @@ export const TabStyles = StyleSheet.create({
     top: -23,
   },
   text: focused => ({
-    fontSize: 12,
-    lineHeight: 18,
+    fontSize: 10,
+    lineHeight: 11.85,
     color: focused ? ThemeVariables.green : ThemeVariables.tabTextColor,
   }),
 });
